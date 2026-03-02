@@ -1,10 +1,8 @@
+# Pull Request Title
+
+## Purpose
+
 ## Description
-
-<!-- What does this PR do? Keep it short and clear. -->
-
-## Changes
-
-<!-- List the key changes. Use checkboxes. -->
 
 - [ ] ...
 
@@ -20,7 +18,7 @@
 
 ## Checklist
 
-- [ ] Code compiles without errors (`g++ -std=c++17 -Wall -Wextra`)
+- [ ] Code compiles without errors
 - [ ] Files are in the correct folders per repo structure
 - [ ] Related READMEs have been updated
 - [ ] UPDATES.md has been updated (if applicable)
