@@ -1,24 +1,24 @@
 /* Fichier   : macros.h    
 	Auteure  : Charlie Bouchard    
-	Cours    : IFT1166 - Programmation orientée objet en C++    
+	Cours    : IFT1166 - Programmation orientee objet en C++    
 	Trimestre: Hiver 2026
 	But      : Inventaire de macros et constantes
-	Dernière mise à jour : 2026-02-26
+	Derniere mise a jour : 2026-02-26
 */
 
-/*  TABLE DES MATIÈRES
+/*  TABLE DES MATIERES
     ══════════════════
      1. Conversion
         1.1 Temps
         1.2 Longueur
         1.3 Masse
         1.4 Angles
-        1.5 Température
-     2. Mathématiques
-        2.1 Constantes mathématiques
-        2.2 Valeurs trigonométriques
-        2.3 Opérations de base
-        2.4 Géométrie
+        1.5 Temperature
+     2. Mathematiques
+        2.1 Constantes mathematiques
+        2.2 Valeurs trigonometriques
+        2.3 Operations de base
+        2.4 Geometrie
      3. Physique
         3.1 Constantes physiques
         3.2 Formules physiques
@@ -26,11 +26,11 @@
         4.1 Constantes chimiques
         4.2 Masses molaires
         4.3 Formules chimiques
-     5. Débogage et affichage
+     5. Debogage et affichage
      6. Tableaux et limites
         6.1 Tailles et tableaux
-        6.2 Limites numériques
-     7. Gestion de la mémoire
+        6.2 Limites numeriques
+     7. Gestion de la memoire
 */
 
 #include <iostream>
@@ -44,8 +44,6 @@
 #include <stdexcept>
 #include <utility>
 
-#include "methodes.h"
-#include "classes.h"
 
 using namespace std;
 
@@ -79,19 +77,19 @@ using namespace std;
         #define DEGRES_DANS_CERCLE 360
         #define RADIANS_DANS_CERCLE 2 * PI
 
-    // ─── 1.5 Température ───
+    // ─── 1.5 Temperature ───
         #define CELSIUS_VERS_FAHRENHEIT(c) ((c) * 9.0 / 5.0 + 32)
         #define FAHRENHEIT_VERS_CELSIUS(f) (((f) - 32) * 5.0 / 9.0)
         #define CELSIUS_VERS_KELVIN(c) ((c) + 273.15)
         #define KELVIN_VERS_CELSIUS(k) ((k) - 273.15)
-        #define FARENHEIT_VERS_KELVIN(f) (((f) - 32) * 5.0 / 9.0 + 273.15)
-        #define KELVIN_VERS_FARENHEIT(k) (((k) - 273.15) * 9.0 / 5.0 + 32)
+        #define FAHRENHEIT_VERS_KELVIN(f) (((f) - 32) * 5.0 / 9.0 + 273.15)
+        #define KELVIN_VERS_FAHRENHEIT(k) (((k) - 273.15) * 9.0 / 5.0 + 32)
         
 /* ═══════════════════════════════════════════════════════════════
-   2. MATHÉMATIQUES
+   2. MATHEMATIQUES
    ═══════════════════════════════════════════════════════════════ */
 
-    // ─── 2.1 Constantes mathématiques ───
+    // ─── 2.1 Constantes mathematiques ───
 
             #define PI 3.14159
             #define EULER 2.71828
@@ -101,7 +99,7 @@ using namespace std;
             #define SQRT3 1.73205
             #define LOG10E 0.43429
 
-    // ─── 2.2 Valeurs trigonométriques ───
+    // ─── 2.2 Valeurs trigonometriques ───
 
             #define SIN30 0.5
             #define COS30 0.86603
@@ -116,7 +114,7 @@ using namespace std;
             #define COS90 0.0
             #define TAN90 INFINITY
 
-    // ─── 2.3 Opérations de base ───
+    // ─── 2.3 Operations de base ───
             #define CARRE(x) ((x) * (x))
             #define CUBE(x) ((x) * (x) * (x))
             #define PUISSANCE(x, n) (pow((x), (n)))
@@ -133,7 +131,7 @@ using namespace std;
             #define PLANCHER(x) ((int)(x))
             #define POURCENTAGE(partie, total) (((partie) * 100.0) / (total))
 
-    // ─── 2.4 Géométrie ───
+    // ─── 2.4 Geometrie ───
 
             #define AIRE_CERCLE(r) (PI * CARRE(r))
             #define PERIMETRE_CERCLE(r) (2 * PI * (r))
@@ -233,7 +231,7 @@ using namespace std;
 
 
 /* ═══════════════════════════════════════════════════════════════
-   5. DÉBOGAGE ET AFFICHAGE
+   5. DEBOGAGE ET AFFICHAGE
    ═══════════════════════════════════════════════════════════════ */
 
         #define AFFICHER(x) cout << #x << " = " << (x) << endl
@@ -255,7 +253,7 @@ using namespace std;
         #define INITIALISER_TABLEAU(arr, val) for(size_t _i=0; _i<TAILLE_TABLEAU(arr); _i++) (arr)[_i] = (val)
         #define AFFICHER_MATRICE(mat, rows, cols) for(size_t _i=0; _i<(rows); _i++) { for(size_t _j=0; _j<(cols); _j++) cout << (mat)[_i][_j] << " "; cout << endl; }
 
-    // ─── 6.2 Limites numériques ───
+    // ─── 6.2 Limites numeriques ───
 
         #define INT_MIN_VAL (-2147483648)
         #define INT_MAX_VAL 2147483647
@@ -265,7 +263,7 @@ using namespace std;
         #define INFINI numeric_limits<double>::infinity()
 
 /* ═══════════════════════════════════════════════════════════════
-   7. GESTION DE LA MÉMOIRE
+   7. GESTION DE LA MEMOIRE
    ═══════════════════════════════════════════════════════════════ */
 
         #define ALLOUER(type, n) (new type[n])
