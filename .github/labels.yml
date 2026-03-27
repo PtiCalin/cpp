@@ -1,0 +1,60 @@
+# Repository labels — synced by .github/workflows/label-sync.yml
+
+# Type
+- name: bug
+  color: "d73a4a"
+  description: Something isn't working.
+
+- name: enhancement
+  color: "a2eeef"
+  description: New feature or improvement.
+
+- name: content
+  color: "0075ca"
+  description: New example, topic, or project.
+
+- name: question
+  color: "d876e3"
+  description: Question or concept to revisit.
+
+- name: documentation
+  color: "0e8a16"
+  description: README, guide, or comment update.
+
+# Status
+- name: stale
+  color: "ededed"
+  description: Inactive — will be closed soon.
+
+- name: pinned
+  color: "006b75"
+  description: Exempt from stale bot.
+
+- name: good first issue
+  color: "7057ff"
+  description: Good for newcomers.
+
+# Phase (maps to ROADMAP)
+- name: "phase:1-foundations"
+  color: "fbca04"
+  description: "Phase 1 — Foundations"
+
+- name: "phase:2-modular"
+  color: "fbca04"
+  description: "Phase 2 — Modular Programming"
+
+- name: "phase:3-oop"
+  color: "fbca04"
+  description: "Phase 3 — OOP"
+
+- name: "phase:4-file-io"
+  color: "fbca04"
+  description: "Phase 4 — File I/O"
+
+- name: "phase:5-projects"
+  color: "fbca04"
+  description: "Phase 5 — Console Projects"
+
+- name: "phase:6-next"
+  color: "fbca04"
+  description: "Phase 6 — Next Steps"
