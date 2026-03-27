@@ -1,0 +1,59 @@
+name: Bug Report
+description: Report code that doesn't compile or behaves incorrectly.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please fill out the sections below.
+
+  - type: input
+    id: file
+    attributes:
+      label: File / Example
+      description: Which file or example is affected?
+      placeholder: e.g. fundamentals/functions/methodes.h
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug — expected vs. actual behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: How can the bug be triggered?
+      value: |
+        1. Compile with `g++ ...`
+        2. Run `./program`
+        3. See error ...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: compiler
+    attributes:
+      label: Compiler
+      options:
+        - g++ (MinGW / Linux)
+        - MSVC (Visual Studio)
+        - clang++
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output / logs
+      description: Paste any compiler errors or runtime output.
+      render: shell
+    validations:
+      required: false

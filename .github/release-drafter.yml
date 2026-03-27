@@ -1,0 +1,42 @@
+# Release Drafter config — categorises merged PRs into release notes.
+
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+
+categories:
+  - title: "New Content"
+    labels:
+      - content
+      - enhancement
+  - title: "Bug Fixes"
+    labels:
+      - bug
+  - title: "Documentation"
+    labels:
+      - documentation
+  - title: "Maintenance"
+    labels:
+      - stale
+
+change-template: "- $TITLE (#$NUMBER) @$AUTHOR"
+no-changes-template: "No changes since the last release."
+
+version-resolver:
+  major:
+    labels: []
+  minor:
+    labels:
+      - enhancement
+      - content
+  patch:
+    labels:
+      - bug
+      - documentation
+  default: patch
+
+template: |
+  ## What's Changed
+
+  $CHANGES
+
+  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION

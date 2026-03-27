@@ -1,0 +1,33 @@
+name: Question / Learning Note
+description: Ask a question or log something you want to revisit.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to log a C++ question or concept you want to explore further.
+
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      placeholder: e.g. virtual destructors, template specialization
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question / Note
+      description: What are you trying to understand?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Any code, links, or details that provide context.
+    validations:
+      required: false

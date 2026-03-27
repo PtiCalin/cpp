@@ -1,0 +1,15 @@
+# <type>: <short summary> (max 50 chars)
+#
+# Types:
+#   Add       — New content, files, examples
+#   Fix       — Bug fix or correction
+#   Refactor  — Code restructure (no new functionality)
+#   Document  — README, comments, guides
+#   Update    — Modify existing content
+#   Remove    — Delete files or code
+#   Style     — Formatting, whitespace, naming
+#
+# Body (optional): explain WHY, not WHAT (wrap at 72 chars)
+#
+# Footer (optional): reference issues — e.g. Closes #12
+

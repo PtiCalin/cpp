@@ -1,0 +1,31 @@
+# CI — Compile check for C++ files
+# Runs on every push and PR to main.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install g++
+        run: sudo apt-get update && sudo apt-get install -y g++
+
+      - name: Compile standalone examples
+        run: |
+          echo "=== Compiling standalone .cpp files ==="
+          exit_code=0
+          for file in $(find . -name '*.cpp' -not -path './.github/*'); do
+            echo "--- $file ---"
+            g++ -std=c++17 -Wall -Wextra -fsyntax-only "$file" 2>&1 || exit_code=1
+          done
+          exit $exit_code

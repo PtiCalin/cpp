@@ -1,0 +1,41 @@
+name: New Content
+description: Suggest a new example, topic, or project to add.
+title: "[Content] "
+labels: ["enhancement", "content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest something to add to the learning repository.
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Roadmap Phase
+      description: Which phase does this relate to?
+      options:
+        - "Phase 1 — Foundations"
+        - "Phase 2 — Modular Programming"
+        - "Phase 3 — OOP"
+        - "Phase 4 — File I/O"
+        - "Phase 5 — Console Projects"
+        - "Phase 6 — Next Steps"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What should be added and why?
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References / Resources
+      description: Any links, articles, or examples that could help?
+    validations:
+      required: false
