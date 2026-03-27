@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Roadmap
+    url: https://github.com/PtiCalin/cpp/blob/main/ROADMAP.md
+    about: Check the learning roadmap before opening an issue.
