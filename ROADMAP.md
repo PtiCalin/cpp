@@ -64,3 +64,9 @@ Beyond the scope of IFT1166 — future self-study.
 - [ ] Build automation (CMake)
 - [ ] Unit testing frameworks (Google Test / Catch2)
 - [ ] Advanced exception handling and error design
+
+---
+
+## Resources
+
+Curated references, tutorials, tools, and community picks — see [`resources/`](resources/README.md).

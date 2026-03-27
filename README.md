@@ -1,10 +1,12 @@
 # C++ Learning Repository
 
-This repository documents my structured learning journey in C++ as a public learning artifact.
+> Built in parallel with **IFT1166 — Programmation orientée objet en C++** · Université de Montréal · Hiver 2026
+
+This repository documents my structured learning journey in C++ as a public learning artifact. It complements the coursework from IFT1166 with additional exploration, personal projects, and curated resources.
 
 ## Primary Goal
 
-**Portfolio artifact for recruiters**: show clear progression, organized thinking, and clean code habits while mastering core C++.
+**Portfolio artifact**: show clear progression, organized thinking, and clean code habits while mastering core C++.
 
 ## Current Scope
 
@@ -37,8 +39,15 @@ Early–intermediate C++ with focus on:
 - `macros/`
 - `projects/`
 - `experiments/`
+- `resources/`
 - `build-notes/`
 - `course-work/`, `clean-examples/`, `refactored/`
+
+## Related Repositories
+
+| Repository | Description |
+|------------|-------------|
+| [H26_IFT1166_TP2_CB](https://github.com/PtiCalin/H26_IFT1166_TP2_CB) | Assignment (TP2) for IFT1166 — Hiver 2026 |
 
 ## How to Compile (g++)
 
