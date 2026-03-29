@@ -2,46 +2,42 @@
 
 > Built in parallel with **IFT1166 — Programmation orientée objet en C++** · Université de Montréal · Hiver 2026
 
-This repository documents my structured learning journey in C++ as a public learning artifact. It complements the coursework from IFT1166 with additional exploration, personal projects, and curated resources.
+A public learning repository documenting my progression through C++ — from language fundamentals to object-oriented design to applied console projects. It complements my IFT1166 coursework with additional exploration, personal projects, curated resources, and community insights.
 
-## Primary Goal
+## Why Learn in Public?
 
-**Portfolio artifact**: show clear progression, organized thinking, and clean code habits while mastering core C++.
+- **Accountability** — committing progress in the open keeps momentum.
+- **Portfolio** — show clear progression, organized thinking, and clean code habits.
+- **Community** — collect feedback, resources, and perspectives from other developers.
+- **Future reference** — a searchable personal knowledge base I can come back to.
 
-## Current Scope
+## What's Inside
 
-Early–intermediate C++ with focus on:
+| Folder | Contents |
+|--------|----------|
+| `fundamentals/` | Variables, control flow, functions, arrays |
+| `modular-programming/` | Header/source separation, include guards, compilation notes |
+| `oop/` | Classes, constructors, member functions, inheritance, polymorphism |
+| `file-handling/` | Text/binary/CSV I/O, directory ops, search & replace |
+| `macros/` | Preprocessor macros and `#define` constants |
+| `projects/` | End-to-end console apps (employee mgmt, library system) |
+| `experiments/` | Scratch prototypes before cleanup |
+| `resources/` | Curated links, books, tools, community insights, and reading notes |
+| `build-notes/` | Compiler guides (g++, MSVC, VS Code, Dev-C++) |
+| `course-work/` | Exercises from IFT1166 (ex01–ex19) |
+| `clean-examples/` | Polished templates and skeletons |
+| `refactored/` | Cleaned-up rewrites of earlier code |
 
-- Core language fundamentals
-- Multi-file project structure
-- Introductory OOP
-- Manual array-based data handling
-- Basic file I/O
-- Macros and preprocessor basics
-- Small console projects
+See the [ROADMAP](ROADMAP.md) for a phase-by-phase breakdown of topics covered and in progress.
 
-## Not Covered Yet (Planned)
+## Current Progress
 
-- STL-heavy work (`vector`, `map`, etc.)
-- Templates
-- Smart pointers and RAII depth
-- Advanced exception handling
-- Modern C++ features in depth
-- Unit test frameworks
-- CMake and advanced build systems
-
-## Repository Structure
-
-- `fundamentals/`
-- `modular-programming/`
-- `oop/`
-- `file-handling/`
-- `macros/`
-- `projects/`
-- `experiments/`
-- `resources/`
-- `build-notes/`
-- `course-work/`, `clean-examples/`, `refactored/`
+- **Phase 1 — Foundations** — core language basics ✔
+- **Phase 2 — Modular Programming** — multi-file organization (in progress)
+- **Phase 3 — OOP** — classes, inheritance, polymorphism (in progress)
+- **Phase 4 — File I/O** — reading, writing, persistence ✔
+- **Phase 5 — Console Projects** — applied programs (in progress)
+- **Phase 6 — Next Steps** — STL, templates, smart pointers, CMake (planned)
 
 ## Related Repositories
 
@@ -56,9 +52,11 @@ g++ main.cpp helper.cpp -o program
 ./program
 ```
 
-## Contribution Rule for Myself
+## Contributing
 
-For each new concept:
-1. Add a concise note (`README.md`) in the matching topic folder.
-2. Add one small runnable `.cpp` sample.
-3. Add one reflection line on what I understood and what still confuses me.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines, code style, and commit conventions.
+
+For each new concept I add:
+1. A concise note (`README.md`) in the matching topic folder.
+2. One small runnable `.cpp` sample.
+3. One reflection line on what I understood and what still confuses me.
