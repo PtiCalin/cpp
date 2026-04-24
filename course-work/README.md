@@ -54,6 +54,14 @@ Chaque fichier est **auto-suffisant** : consignes en commentaire + solution comp
 | 17 | [ex17-stl-algorithmes.cpp](ex17-stl-algorithmes.cpp) | STL avancée | `map`, `set`, `pair`, `sort` + lambda, `for_each`, `transform` |
 | 19 | [ex19-projet-gestion-notes.cpp](ex19-projet-gestion-notes.cpp) | Projet de synthèse | Héritage, composition, STL, fichiers, polymorphisme — tout combiné |
 
+## Révision — Examen final
+
+| # | Fichier | Thème | Concepts clés |
+|---|---------|-------|---------------|
+| 20 | [ex20-revision-examen-final.cpp](ex20-revision-examen-final.cpp) | Révision examen | Sorties de programme, correction de bogues, codage (héritage + polymorphisme) |
+
+Voir aussi : [Guide de révision complet](../resources/notes/examen-final-ift1166.md) (chapitres 11–18, terminologie, aide-mémoire).
+
 ---
 
 ## Comment utiliser

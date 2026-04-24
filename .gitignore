@@ -1,0 +1,6 @@
+# Git Ignore File
+
+## Development Tools
+/.claude/
+/.vscode/
+
