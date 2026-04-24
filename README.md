@@ -15,6 +15,12 @@ A public learning repository documenting my progression through C++ — from lan
 
 | Folder | Contents |
 |--------|----------|
+| `theory/` | Conceptual progression by module (fundamentals to STL/build/debug) |
+| `examples/` | Executable, annotated examples organized by topic |
+| `exercises/` | Progressive exercises with dedicated solutions section |
+| `reference/` | Fast reference sheets (syntax, STL, common errors, debug) |
+| `engines/` | Toolchain-specific notes (g++, clang, MSVC, CMake) |
+| `tools/` | Internal learning utilities (templates, scripts, datasets) |
 | `fundamentals/` | Variables, control flow, functions, arrays |
 | `modular-programming/` | Header/source separation, include guards, compilation notes |
 | `oop/` | Classes, constructors, member functions, inheritance, polymorphism |
@@ -29,6 +35,30 @@ A public learning repository documenting my progression through C++ — from lan
 | `refactored/` | Cleaned-up rewrites of earlier code |
 
 See the [ROADMAP](ROADMAP.md) for a phase-by-phase breakdown of topics covered and in progress.
+
+## Pedagogical Outline (SQL-style adaptation)
+
+This repository now follows a parallel pedagogical scaffold inspired by the SQL repo:
+
+- [theory/](theory/README.md)
+- [examples/](examples/README.md)
+- [exercises/](exercises/README.md)
+- [resources/](resources/RESSOURCES.md)
+- [tools/](tools/README.md)
+- [projects/](projects/README.md)
+
+Support sections added for fast review and environment setup:
+
+- [reference/](reference/README.md)
+- [engines/](engines/README.md)
+
+### Migrate legacy folders into the new structure
+
+```powershell
+cd tools/scripts
+powershell -ExecutionPolicy Bypass -File .\migrate-workspace-to-new-structure.ps1 -DryRun
+powershell -ExecutionPolicy Bypass -File .\migrate-workspace-to-new-structure.ps1
+```
 
 ## Current Progress
 
